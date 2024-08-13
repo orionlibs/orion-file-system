@@ -1,8 +1,8 @@
 package io.github.orionlibs.orion_file_system.file.tasks;
 
 import io.github.orionlibs.orion_assert.Assert;
-import io.github.orionlibs.orion_file_system.CloseResourceTask;
 import io.github.orionlibs.orion_file_system.stream.FileSystemStreamsService;
+import io.github.orionlibs.orion_stream.CloseableResource;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class SaveStringToFileTask
         }
         finally
         {
-            CloseResourceTask.run(output);
+            CloseableResource.run(output);
         }
     }
 
@@ -69,7 +69,7 @@ public class SaveStringToFileTask
         }
         finally
         {
-            CloseResourceTask.run(output);
+            CloseableResource.run(output);
         }
     }
 
