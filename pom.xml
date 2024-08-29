@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.orionlibs</groupId>
     <artifactId>orion-file-system</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <name>Orion File system</name>
     <description>Java library to handle files and directories</description>
     <url>https://github.com/orionlibs/orion-file-system</url>
@@ -230,14 +230,14 @@
         <dependency>
             <groupId>io.github.orionlibs</groupId>
             <artifactId>orion-stream</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </dependency>
 
 
         <dependency>
             <groupId>io.github.orionlibs</groupId>
             <artifactId>orion-object</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.3</version>
         </dependency>
 
 
