@@ -2,7 +2,7 @@ package io.github.orionlibs.orion_file_system.file.tasks;
 
 import io.github.orionlibs.orion_assert.Assert;
 import io.github.orionlibs.orion_file_system.file.FileService;
-import io.github.orionlibs.orion_stream.CloseableResource;
+import io.github.orionlibs.orion_object.ResourceCloser;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -33,9 +33,9 @@ public class DownloadFileTask
         }
         finally
         {
-            CloseableResource.run(input);
-            CloseableResource.run(output);
-            CloseableResource.run(fos);
+            ResourceCloser.closeResource(input);
+            ResourceCloser.closeResource(output);
+            ResourceCloser.closeResource(fos);
         }
     }
 }
